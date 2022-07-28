@@ -13,3 +13,7 @@
 .bg-review {
 	background-color: #f4fafd;
 }
+.question-box {
+	max-width: 870px;
+	min-width: 335px;
+}
