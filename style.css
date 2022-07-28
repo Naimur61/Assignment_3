@@ -3,3 +3,7 @@
 	bottom: initial;
 	top: 50%;
 }
+.course-title {
+	max-width: 550px;
+	min-width: 300px;
+}
