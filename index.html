@@ -344,9 +344,9 @@
 
 			<!-- Register section start -->
 			<section class="my-5">
-				<div class="btn btn-info rounded-1 text-white p-4">
+				<div class="btn btn-info rounded-1 p-4">
 					<div class="row align-items-center gy-3">
-						<div class="col-lg-7 col-12 p-lg-5 text-lg-start">
+						<div class="col-lg-7 col-12 p-lg-5 text-lg-start text-white">
 							<h2>Ready to join?</h2>
 							<p>
 								Go from no-code to an in-demand junior web developer, at a fraction of the cost of a bootcamp.
@@ -354,7 +354,66 @@
 							</p>
 						</div>
 						<div class="col-lg-5 col-12">
-							<a class="btn btn-light text-info fw-semibold rounded-1 px-3 px-sm-4" href="">Register Now</a>
+							<button
+								type="button"
+								class="btn btn-light text-info fw-semibold rounded-1 px-3 px-sm-4"
+								data-bs-toggle="modal"
+								data-bs-target="#ModalForm"
+							>
+								Register Now
+							</button>
+
+							<!-- Modal Form -->
+							<div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+										<!-- Login Form -->
+										<form class="text-start">
+											<div class="modal-header">
+												<h5 class="modal-title">Please Login</h5>
+												<button
+													type="button"
+													class="btn-close"
+													data-bs-dismiss="modal"
+													aria-label="Close"
+												></button>
+											</div>
+											<div class="modal-body">
+												<div class="mb-3">
+													<label for="Username">Username<span class="text-danger">*</span></label>
+													<input
+														type="text"
+														name="username"
+														class="form-control"
+														id="Username"
+														placeholder="Enter Username"
+													/>
+												</div>
+
+												<div class="mb-3">
+													<label for="Password">Password<span class="text-danger">*</span></label>
+													<input
+														type="password"
+														name="password"
+														class="form-control"
+														id="Password"
+														placeholder="Enter Password"
+													/>
+												</div>
+												<div class="mb-3">
+													<input class="form-check-input" type="checkbox" value="" id="remember" required />
+													<label class="form-check-label" for="remember">Remember Me</label>
+													<a href="#" class="float-end">Forgot Password</a>
+												</div>
+											</div>
+											<div class="modal-footer pt-4">
+												<button type="button" class="btn btn-success mx-auto w-100">Login</button>
+											</div>
+											<p class="text-center">Not yet account, <a href="#">Signup</a></p>
+										</form>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
